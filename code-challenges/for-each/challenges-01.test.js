@@ -9,10 +9,10 @@ Then, write a function named speaker that takes in a string and a callback funct
 the string in all uppercase letters only by invoking the callback.
 ------------------------------------------------------------------------------------------------ */
 
-const greeting = (word) => {
+const greeting = (word) =>
     // Solution code here...
-    return word.toUpperCase();
-};
+    word.toUpperCase();
+
 
 const speaker = (message, callback) => {
     // Solution code here...
@@ -99,7 +99,7 @@ const fizzbuzz = (arr) => {
     let numArr = [];
     arr.forEach(value => {
 
-        if (value % 5 === 0 & value % 3 === 0) {
+        if (value % 5 === 0 && value % 3 === 0) {
             value = 'Fizz Buzz';
             numArr.push(value);
         } else if (value % 5 === 0) {
